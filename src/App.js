@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        { Main React components }
+        {/* Main React components */}
         <HelloWorld />
         <Counter />
         <FilteredList items={produce} />
