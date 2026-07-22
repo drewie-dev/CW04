@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { DropdownButton, MenuItem } from "react-bootstrap";
-import List from "./FilteredList";
+import { Dropdown, DropdownButton } from "react-bootstrap";
+import List from "./List";
 
 class FilteredList extends Component {
   constructor(props) {
@@ -57,9 +57,9 @@ class FilteredList extends Component {
           title="Filter"
           onSelect={this.onFilter}
         >
-          <MenuItem eventKey="All">All</MenuItem>
-          <MenuItem eventKey="Fruit">Fruit</MenuItem>
-          <MenuItem eventKey="Vegetable">Vegetables</MenuItem>
+          <Dropdown.Item eventKey="All">All</Dropdown.Item>
+          <Dropdown.Item eventKey="Fruit">Fruit</Dropdown.Item>
+          <Dropdown.Item eventKey="Vegetable">Vegetables</Dropdown.Item>
         </DropdownButton>
 
         {/* Display the filtered items */}
