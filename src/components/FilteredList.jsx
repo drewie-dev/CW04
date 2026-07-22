@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { DropdownButton, MenuItem } from "react-bootstrap";
-import List from "./List";
+import List from "./FilteredList";
 
 class FilteredList extends Component {
   constructor(props) {
